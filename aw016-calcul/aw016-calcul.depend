@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601985995 source:c:\users\u1\programing\asmwinapi\aw016-calcul\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
