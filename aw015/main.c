@@ -10,7 +10,7 @@ int main()
 
     SelectObject (dc, GetStockObject(DC_BRUSH));
     SetDCBrushColor (dc, RGB(255,0,255));
-    SetDCPenColor (dc, RGB(0,255,0));
+
     Rectangle (dc,10,10,110,110);
     Ellipse (dc,200,100,300,200);
 

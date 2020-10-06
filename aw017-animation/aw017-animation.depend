@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601987444 source:c:\users\u1\programing\asmwinapi\aw017-animation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
