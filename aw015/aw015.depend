@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1601984982 source:c:\users\u1\programing\asmwinapi\aw015\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
