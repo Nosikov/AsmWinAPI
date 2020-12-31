@@ -1,0 +1,66 @@
+Microsoft (R) Macro Assembler Version 6.14.8444		    11/25/20 15:33:11
+C:\Users\U1\programing\AsmWinAPI\exp02\hello.asm	     Page 1 - 1
+
+
+				.model SMALL
+				.386
+				.model flat, stdcall
+C:\Users\U1\programing\AsmWinAPI\exp02\hello.asm(3) : warning A4011: multiple .MODEL directives found : .MODEL ignored
+				.stack 100h
+ 00000000			.data
+ 00000000 48 65 6C 6C 6F			Message db 'Hello, World$'
+       2C 20 57 6F 72 6C
+       64 24
+ 00000000			.code
+
+ 00000000			start:
+ 00000000  B8 ---- R				mov ax, @data
+ 00000003  8E D8				mov ds, ax
+						
+ 00000005  BA 0000 R				mov dx, offset Message
+ 00000008  B4 09				mov ah, 9h
+ 0000000A  CD 21				int 21h
+						
+ 0000000C  B4 08				mov ah, 8h
+ 0000000E  CD 21				int 21h
+						
+ 00000010  B4 4C				mov ah, 4Ch
+ 00000012  B0 00				mov al, 00h
+ 00000014  CD 21				int 21h
+						
+				end start
+Microsoft (R) Macro Assembler Version 6.14.8444		    11/25/20 15:33:11
+C:\Users\U1\programing\AsmWinAPI\exp02\hello.asm	     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+DGROUP . . . . . . . . . . . . .	GROUP
+_DATA  . . . . . . . . . . . . .	16 Bit	 0000000D Word	  Public  'DATA'	
+STACK  . . . . . . . . . . . . .	16 Bit	 00000100 Para	  Stack	  'STACK'	 
+FLAT . . . . . . . . . . . . . .	GROUP
+_TEXT  . . . . . . . . . . . . .	16 Bit	 00000016 Word	  Public  'CODE'	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000000h   
+@Model . . . . . . . . . . . . .	Number	 00000002h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 DGROUP
+@fardata?  . . . . . . . . . . .	Text   	 FAR_BSS
+@fardata . . . . . . . . . . . .	Text   	 FAR_DATA
+@stack . . . . . . . . . . . . .	Text   	 DGROUP
+Message  . . . . . . . . . . . .	Byte	 00000000 _DATA	
+start  . . . . . . . . . . . . .	L Near	 00000000 _TEXT	
+
+	   1 Warnings
+	   0 Errors
